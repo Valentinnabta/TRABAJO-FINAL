@@ -1,0 +1,18 @@
+body {
+    background-color: black;
+}
+
+.titulo {
+  font-family: 'Anton', sans-serif;
+  color: white;
+  font-size: 320px;
+  text-align: center;
+}
+
+.titulo:hover {
+    color: red;
+}
+
+a {
+    text-decoration: none;
+}

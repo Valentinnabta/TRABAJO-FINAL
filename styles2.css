@@ -1,0 +1,126 @@
+body {
+    background-color: black;
+}
+
+.titulo2 {
+  font-family: 'Anton', sans-serif;
+  color: white;
+  font-size:220px;
+  text-align: center;
+}
+
+.titulo2:hover{
+    color:rgb(0, 30, 130);
+}
+
+.fondo-imagen {
+  background-image: url("https://images.pexels.com/photos/281260/pexels-photo-281260.jpeg?_gl=1*1tdz3tq*_ga*MTMzNDYzNjEyMS4xNzcyMDM5NDk2*_ga_8JE65Q40S6*czE3NzIwMzk0OTUkbzEkZzEkdDE3NzIwMzk0OTckajU4JGwwJGgw");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+}
+
+.colina {
+  width: 100vw;
+  position: fixed;
+  bottom: 0px;
+  z-index: -1;
+}
+
+.flor1{
+    width: 20vw;
+    position: fixed;
+    bottom: 197px;
+    left: 80vw;
+}
+
+.FLORES {
+    position: fixed;
+}
+
+.flor2{
+  width: 16vw;
+  height: auto;
+    position: fixed;
+    bottom: 70px;
+    left: -1vw;
+}
+
+.flor3{
+    width: 13vw;
+    height: auto;
+    position: fixed;
+    bottom: 40px;
+    left: 30vw;
+}
+.flor3:active {
+    transform: translateX(80px);
+}
+
+.flor4 {
+    width: 13vw;
+    height: auto;
+    position: fixed;
+    bottom: 60px;
+    left: 65vw;
+}
+
+.pajaro1{
+    width: 10vw;
+    height: auto;
+    position: fixed;
+    bottom: 43vw;
+    left: 0vw;
+    animation: mover 8s linear infinite;
+}
+
+@keyframes mover {
+    0% {
+        left: -15vw;
+    }
+
+    50% {
+        left: 100vw;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+.mariposa1{
+  width: 9vw;
+  height: auto;
+  position: fixed;
+  bottom: 60px;
+  left: 65vw;
+  animation: movermariposa 8s linear infinite;
+}
+
+@keyframes movermariposa {
+    0% {
+        left: 0;
+        top: 0;
+    }
+
+    25% {
+        left: 90vw;
+        top: 10vh;
+    }
+
+    50% {
+        left: 80vw;
+        top: 70vh;
+    }
+
+    75% {
+        left: 0;
+        top: 60vh;
+    }
+
+    100% {
+        left: 0;
+        top: 0;
+    }
+}
