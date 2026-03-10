@@ -54,9 +54,7 @@ body {
     position: fixed;
     bottom: 40px;
     left: 30vw;
-}
-.flor3:active {
-    transform: translateX(80px);
+    cursor: pointer;
 }
 
 .flor4 {
@@ -65,6 +63,11 @@ body {
     position: fixed;
     bottom: 60px;
     left: 65vw;
+    cursor: pointer;
+}
+
+.flor2{
+    cursor: pointer;
 }
 
 .pajaro1{
@@ -89,38 +92,138 @@ body {
         left: 0;
     }
 }
-.mariposa1{
-  width: 9vw;
-  height: auto;
-  position: fixed;
-  bottom: 60px;
-  left: 65vw;
-  animation: movermariposa 8s linear infinite;
+
+#mariposa1 {
+  width: 8vw;
+  position: absolute;
+  left: 60vw;
+  top: 20vh;
+  animation: volar1 6s infinite linear;
 }
 
-@keyframes movermariposa {
-    0% {
-        left: 0;
-        top: 0;
-    }
+#mariposa1{
+  position: absolute;
+  width: 8vw;
+  animation: volar 12s infinite linear;
+}
 
-    25% {
-        left: 90vw;
-        top: 10vh;
+@keyframes volar{
+  0%{
+    top: 10vh;
+    left: 0vw;
+  }
+
+  25%{
+    top: 40vh;
+    left: 30vw;
+  }
+
+  50%{
+    top: 5vh;
+    left: 60vw;
+  }
+
+  75%{
+    top: 50vh;
+    left: 80vw;
+  }
+
+  100%{
+    top: 20vh;
+    left: 100vw;
+  }
+}
+
+.mariposa2{
+width:8vw;
+position:relative;
+left:40vw;
+bottom:10vh;
+opacity:0;
+}
+
+.mariposa2-volar{
+opacity:1;
+animation: volar2 4s linear;
+}
+
+@keyframes volar2{
+
+0%{
+transform: translate(0,0);
+}
+
+100%{
+transform: translate(500px,-300px);
+}
+
+}
+
+.dark{
+  filter: brightness(40%);
+  transition: 0.5s;
+}
+
+#libelula{
+  position: absolute;
+  width: 7vw;
+  animation: vueloLibelula 10s infinite linear;
+}
+
+@keyframes vueloLibelula{
+
+  0%{
+    top: 0vh;
+    left: 20vw;
+  }
+
+  20%{
+    top: 60vh;
+    left: 90vw;
+  }
+
+  40%{
+    top: 30vh;
+    left: 50vw;
+  }
+
+  60%{
+    top: 80vh;
+    left: 30vw;
+  }
+
+  80%{
+    top: 20vh;
+    left: 100vw;
+  }
+
+  100%{
+    top: 60vh;
+    left: 40vw;
+  }
+
+}
+
+.pajaro2{
+    width: 15vw;
+    height: auto;
+    position: fixed;
+    bottom: 18vw;
+    left: 0vw;
+    z-index: -1;
+    animation: mover 8s ease infinite;
+}
+
+@keyframes mover {
+    0% {
+        left: -20vw;
     }
 
     50% {
-        left: 80vw;
-        top: 70vh;
-    }
-
-    75% {
-        left: 0;
-        top: 60vh;
+        left: 100vw;
     }
 
     100% {
-        left: 0;
-        top: 0;
+        left: -20;
     }
 }
