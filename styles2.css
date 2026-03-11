@@ -95,9 +95,9 @@ body {
 
 #mariposa1 {
   width: 8vw;
-  position: absolute;
+  position: fixed;
   left: 60vw;
-  top: 20vh;
+  bottom: 20vh;
   animation: volar1 6s infinite linear;
 }
 
